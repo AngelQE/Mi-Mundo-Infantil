@@ -34,98 +34,74 @@
     </div>
 </header>
 
-<!-- Sección de Fotografías de la Galería -->
+<!-- Sección de Fotografías Ordenada con Bootstrap Nativo -->
 <main class="py-5">
     <div class="container">
-        <!-- row-cols define la cuadrícula responsiva: 1 en celular, 2 en tablets y 3 en computadoras -->
+        <!-- row y las clases row-cols-X controlan el ordenamiento en columnas estrictas de Bootstrap -->
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             
             <!-- Foto 1 -->
             <div class="col">
-                <div class="glass nivel-card p-0 d-flex flex-column h-100">
-                    <div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: var(--radio) var(--radio) 0 0;">
-                        <img src="images/foto1.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Actividad en el nivel inicial">
-                    </div>
-                    <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="titulo mb-2">Aprendizaje Lúdico</h4>
-                            <p class="text-muted small mb-0">Nuestros niños de inicial explorando formas y colores a través del juego.</p>
-                        </div>
+                <div class="card glass h-100 border-secondary-subtle" style="border-radius: var(--radio); overflow: hidden;">
+                    <img src="images/foto1.jpeg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="Actividad en el nivel inicial">
+                    <div class="card-body p-4">
+                        <h4 class="titulo card-title mb-2 fs-5 fw-bold">Aprendizaje Lúdico</h4>
+                        <p class="card-text text-muted small">Nuestros niños de inicial explorando formas y colores a través del juego.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 2 -->
             <div class="col">
-                <div class="glass nivel-card p-0 d-flex flex-column h-100">
-                    <div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: var(--radio) var(--radio) 0 0;">
-                        <img src="images/foto2.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Alumnos en el aula de primaria">
-                    </div>
-                    <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="titulo mb-2">Clases de Primaria</h4>
-                            <p class="text-muted small mb-0">Desarrollo de competencias y trabajo en equipo en las aulas principales.</p>
-                        </div>
+                <div class="card glass h-100 border-secondary-subtle" style="border-radius: var(--radio); overflow: hidden;">
+                    <img src="images/foto2.jpeg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="Alumnos en el aula de primaria">
+                    <div class="card-body p-4">
+                        <h4 class="titulo card-title mb-2 fs-5 fw-bold">Clases de Primaria</h4>
+                        <p class="card-text text-muted small">Desarrollo de competencias y trabajo en equipo en las aulas principales.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 3 -->
             <div class="col">
-                <div class="glass nivel-card p-0 d-flex flex-column h-100">
-                    <div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: var(--radio) var(--radio) 0 0;">
-                        <img src="images/foto3.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Evento institucional con familias">
-                    </div>
-                    <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="titulo mb-2">Talleres con Padres</h4>
-                            <p class="text-muted small mb-0">Espacios de integración donde las familias participan activamente.</p>
-                        </div>
+                <div class="card glass h-100 border-secondary-subtle" style="border-radius: var(--radio); overflow: hidden;">
+                    <img src="images/foto3.jpeg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="Evento institucional con familias">
+                    <div class="card-body p-4">
+                        <h4 class="titulo card-title mb-2 fs-5 fw-bold">Talleres con Padres</h4>
+                        <p class="card-text text-muted small">Espacios de integración donde las familias participan activamente.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 4 -->
             <div class="col">
-                <div class="glass nivel-card p-0 d-flex flex-column h-100">
-                    <div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: var(--radio) var(--radio) 0 0;">
-                        <img src="images/foto4.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Celebración o festividad escolar">
-                    </div>
-                    <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="titulo mb-2">Fechas Jubilares</h4>
-                            <p class="text-muted small mb-0">Celebrando nuestras tradiciones y el talento artístico escolar.</p>
-                        </div>
+                <div class="card glass h-100 border-secondary-subtle" style="border-radius: var(--radio); overflow: hidden;">
+                    <img src="images/foto4.jpeg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="Celebración o festividad escolar">
+                    <div class="card-body p-4">
+                        <h4 class="titulo card-title mb-2 fs-5 fw-bold">Fechas Jubilares</h4>
+                        <p class="card-text text-muted small">Celebrando nuestras tradiciones y el talento artístico escolar.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 5 -->
             <div class="col">
-                <div class="glass nivel-card p-0 d-flex flex-column h-100">
-                    <div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: var(--radio) var(--radio) 0 0;">
-                        <img src="images/foto5.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Área de recreación y juego seguro">
-                    </div>
-                    <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="titulo mb-2">Receso y Recreación</h4>
-                            <p class="text-muted small mb-0">Ambientes seguros diseñados para el sano esparcimiento físico.</p>
-                        </div>
+                <div class="card glass h-100 border-secondary-subtle" style="border-radius: var(--radio); overflow: hidden;">
+                    <img src="images/foto5.jpeg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="Área de recreación y juego seguro">
+                    <div class="card-body p-4">
+                        <h4 class="titulo card-title mb-2 fs-5 fw-bold">Receso y Recreación</h4>
+                        <p class="card-text text-muted small">Ambientes seguros diseñados para el sano esparcimiento físico.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 6 -->
             <div class="col">
-                <div class="glass nivel-card p-0 d-flex flex-column h-100">
-                    <div style="width: 100%; height: 250px; overflow: hidden; position: relative; border-radius: var(--radio) var(--radio) 0 0;">
-                        <img src="images/foto6.jpeg" class="w-100 h-100" style="object-fit: cover;" alt="Proyectos de ciencia o arte">
-                    </div>
-                    <div class="p-4 flex-grow-1 d-flex flex-column justify-content-between">
-                        <div>
-                            <h4 class="titulo mb-2">Feria de Ciencias</h4>
-                            <p class="text-muted small mb-0">Impulsando la curiosidad científica e investigación desde temprana edad.</p>
-                        </div>
+                <div class="card glass h-100 border-secondary-subtle" style="border-radius: var(--radio); overflow: hidden;">
+                    <img src="images/foto6.jpeg" class="card-img-top" style="height: 240px; object-fit: cover;" alt="Proyectos de ciencia o arte">
+                    <div class="card-body p-4">
+                        <h4 class="titulo card-title mb-2 fs-5 fw-bold">Feria de Ciencias</h4>
+                        <p class="card-text text-muted small">Impulsando la curiosidad científica e investigación desde temprana edad.</p>
                     </div>
                 </div>
             </div>
@@ -133,6 +109,7 @@
         </div>
     </div>
 </main>
+
 
 <footer class="pie text-center">© 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar</footer>
 
