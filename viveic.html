@@ -34,85 +34,48 @@
     </div>
 </header>
 
-<!-- Sección de Fotografías -->
-<main class="seccion pt-0">
+<!-- Sección de Fotografías Corregida -->
+<main class="py-5">
     <div class="container">
-        <div class="row g-4">
+        <!-- row-cols define cuántas columnas se muestran por fila según el tamaño de pantalla -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
             
             <!-- Foto 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card glass foto-card">
-                    <div class="foto-wrapper">
-                        <img src="foto1.jpeg" alt="Actividad en el nivel inicial">
+            <div class="col">
+                <div class="card glass h-100 foto-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); border-radius: 12px; overflow: hidden;">
+                    <div class="foto-wrapper" style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                        <!-- w-100 y h-100 con object-fit: cover evitan que la imagen se deforme -->
+                        <img src="images/foto1.jpg" class="w-100 h-100" style="object-fit: cover; display: block;" alt="Actividad en el nivel inicial">
                     </div>
-                    <div class="card-body">
-                        <h5 class="titulo mb-1">Aprendizaje Lúdico</h5>
-                        <p class="text-muted small mb-0">Nuestros niños de inicial explorando formas y colores a través del juego.</p>
+                    <div class="card-body p-3">
+                        <h5 class="titulo mb-1 fs-5 fw-bold" style="font-family: 'Fredoka', sans-serif;">Aprendizaje Lúdico</h5>
+                        <p class="text-muted small mb-0" style="font-family: 'Poppins', sans-serif;">Nuestros niños de inicial explorando formas y colores a través del juego.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card glass foto-card">
-                    <div class="foto-wrapper">
-                        <img src="images/foto2.jpeg" alt="Alumnos en el aula de primaria">
+            <div class="col">
+                <div class="card glass h-100 foto-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); border-radius: 12px; overflow: hidden;">
+                    <div class="foto-wrapper" style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                        <img src="images/foto2.jpg" class="w-100 h-100" style="object-fit: cover; display: block;" alt="Alumnos en el aula de primaria">
                     </div>
-                    <div class="card-body">
-                        <h5 class="titulo mb-1">Clases de Primaria</h5>
-                        <p class="text-muted small mb-0">Desarrollo de competencias y trabajo en equipo en las aulas principales.</p>
+                    <div class="card-body p-3">
+                        <h5 class="titulo mb-1 fs-5 fw-bold" style="font-family: 'Fredoka', sans-serif;">Clases de Primaria</h5>
+                        <p class="text-muted small mb-0" style="font-family: 'Poppins', sans-serif;">Desarrollo de competencias y trabajo en equipo en las aulas principales.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Foto 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card glass foto-card">
-                    <div class="foto-wrapper">
-                        <img src="images/foto3.jpeg" alt="Evento institucional con familias">
+            <div class="col">
+                <div class="card glass h-100 foto-card" style="border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.05); border-radius: 12px; overflow: hidden;">
+                    <div class="foto-wrapper" style="width: 100%; height: 240px; overflow: hidden; position: relative;">
+                        <img src="images/foto3.jpg" class="w-100 h-100" style="object-fit: cover; display: block;" alt="Evento institucional con familias">
                     </div>
-                    <div class="card-body">
-                        <h5 class="titulo mb-1">Talleres con Padres</h5>
-                        <p class="text-muted small mb-0">Espacios de integración donde las familias participan activamente.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Foto 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card glass foto-card">
-                    <div class="foto-wrapper">
-                        <img src="images/foto4.jpeg" alt="Celebración o festividad escolar">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="titulo mb-1">Fechas Jubilares</h5>
-                        <p class="text-muted small mb-0">Celebrando nuestras tradiciones y el talento artístico escolar.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Foto 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card glass foto-card">
-                    <div class="foto-wrapper">
-                        <img src="images/foto5.jpeg" alt="Área de recreación y juego seguro">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="titulo mb-1">Receso y Recreación</h5>
-                        <p class="text-muted small mb-0">Ambientes seguros diseñados para el sano esparcimiento físico.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Foto 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card glass foto-card">
-                    <div class="foto-wrapper">
-                        <img src="images/foto6.jpeg" alt="Proyectos de ciencia o arte">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="titulo mb-1">Feria de Ciencias</h5>
-                        <p class="text-muted small mb-0">Impulsando la curiosidad científica e investigación desde temprana edad.</p>
+                    <div class="card-body p-3">
+                        <h5 class="titulo mb-1 fs-5 fw-bold" style="font-family: 'Fredoka', sans-serif;">Talleres con Padres</h5>
+                        <p class="text-muted small mb-0" style="font-family: 'Poppins', sans-serif;">Espacios de integración donde las familias participan activamente.</p>
                     </div>
                 </div>
             </div>
@@ -120,6 +83,7 @@
         </div>
     </div>
 </main>
+
 
 <footer class="pie text-center">© 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar</footer>
 
