@@ -1,141 +1,157 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bienvenidos · Mi Mundo Infantil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Ajuste para que la barra fija no tape el inicio del contenido */
-        body {
-            padding-top: 56px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Momentos — IEP Mi Mundo Infantil</title>
+  <!-- Enlaces a las fuentes tipográficas del nuevo CSS -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Tu archivo de estilos -->
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Barra de navegación superior fija -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary-subtle">
+  <!-- Encabezado / Hero Informativo Corto -->
+  <header class="hero">
     <div class="container">
-        <a class="navbar-brand titulo fs-5" href="#">Mi Mundo Infantil</a>
-        <div class="ms-auto">
-            <a href="https://github.com/AngelQE/Mi-Mundo-Infantil" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm fw-medium rounded-pill px-3">
-                📦 Repositorio
-            </a>
-            <a href="viveic.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm fw-medium rounded-pill px-3">
-                📦 VIVE IC
-            </a>
+      <div class="reveal">
+        <span class="eyebrow" style="color: var(--verde-300);">Nuestra Experiencia Escolar</span>
+        <h1>Galería de Fotos</h1>
+        <p class="lead">Un registro visual de las actividades, talleres y el día a día que define la vida en nuestra comunidad educativa.</p>
+        <div class="hero__cta">
+          <a href="index.html" class="btn btn--primary">← Volver al Inicio</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">📦 Repositorio</a>
         </div>
+      </div>
     </div>
-</nav>
+  </header>
 
-<header class="hero">
-    <span class="orbe o1"></span><span class="orbe o2"></span><span class="orbe o3"></span>
-    <span class="estrella" style="top:18%;left:22%;animation-delay:.2s">✦</span>
-    <span class="estrella" style="top:30%;right:18%;animation-delay:1.4s">✧</span>
-    <span class="estrella" style="top:68%;left:12%;animation-delay:2.2s">✦</span>
-    <span class="estrella" style="top:75%;right:26%;animation-delay:.9s">✧</span>
-    <span class="estrella" style="top:12%;right:42%;animation-delay:3s">✦</span>
-
-    <div class="hero-contenido">
-        <span class="hero-etiqueta">Institución Educativa Particular · Huancayo</span>
-        <h1 class="titulo">Mi Mundo<br>Infantil</h1>
-        <p class="lead">Educamos integralmente a niñas y niños de <strong>Inicial</strong> y <strong>Primaria</strong>,
-            desarrollando su potencial académico, personal y social — con las familias siempre cerca.</p>
-        <div class="hero-botones">
-            <!-- Reemplazado por enlaces HTML convencionales -->
-            <a href="" class="btn-pill relleno">Iniciar sesión ›</a>
-            <a href="#niveles" class="btn-pill">Conoce nuestros niveles</a>
-        </div>
-    </div>
-    <span class="scroll-hint">Desliza ↓</span>
-</header>
-
-<section class="seccion" id="niveles">
+  <!-- Sección de la Galería Organizada en Grid de 3x3 -->
+  <main class="section">
     <div class="container">
-        <h2 class="seccion-titulo titulo">Nuestros niveles</h2>
-        <p class="seccion-sub">Dos niveles de Educación Básica Regular, con horarios y aulas pensados para cada edad.</p>
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <div class="glass nivel-card inicial">
-                    <span class="fecha-chip">3 – 5 años</span>
-                    <h3 class="titulo mt-2">Nivel Inicial</h3>
-                    <p class="text-muted">Ciclo II · Aprendizaje a través del juego, la exploración y la expresión.
-                        Evaluación observacional y descriptiva.</p>
-                    
-                    <!-- Ejemplo estático de los bucles eliminados -->
-                    <div class="horario-fila">
-                        <span>Aula Semillitas (3 años)</span>
-                        <span>08:30 – 12:30</span>
-                    </div>
-                    <div class="horario-fila">
-                        <span>Aula Exploradores (4 años)</span>
-                        <span>08:30 – 13:00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="glass nivel-card primaria">
-                    <span class="fecha-chip">6 – 11 años</span>
-                    <h3 class="titulo mt-2">Nivel Primaria</h3>
-                    <p class="text-muted">Ciclos III, IV y V · De 1° a 6° grado. Desarrollo progresivo de competencias
-                        en 8 áreas curriculares.</p>
-                    
-                    <!-- Ejemplo estático de los bucles eliminados -->
-                    <div class="horario-fila">
-                        <span>1° a 3° Grado</span>
-                        <span>08:00 – 13:45</span>
-                    </div>
-                    <div class="horario-fila">
-                        <span>4° a 6° Grado</span>
-                        <span>08:00 – 14:15</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+      
+      <!-- La clase "cards" maneja de forma nativa el orden simétrico en columnas mediante tu CSS -->
+      <div class="cards">
+        
+        <!-- Foto 1 -->
+        <article class="card reveal" style="padding: 0; overflow: hidden;">
+          <div style="width: 100%; height: 250px; overflow: hidden; position: relative; background: var(--verde-100);">
+            <img src="images/foto1.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Actividad en el nivel inicial">
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="badge">Nivel Inicial</span>
+            <h3 class="card__title">Aprendizaje Lúdico</h3>
+            <p class="card__text">Exploración guiada de formas, texturas y colores a través de actividades lúdicas pensadas para su edad.</p>
+          </div>
+        </article>
 
-<section class="seccion" id="sistema">
+        <!-- Foto 2 -->
+        <article class="card reveal" style="padding: 0; overflow: hidden;">
+          <div style="width: 100%; height: 250px; overflow: hidden; position: relative; background: var(--verde-100);">
+            <img src="images/foto2.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Alumnos en el aula de primaria">
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="badge">Nivel Primaria</span>
+            <h3 class="card__title">Desarrollo de Competencias</h3>
+            <p class="card__text">Trabajo en equipo y resolución de retos académicos en nuestras aulas de nivel primaria.</p>
+          </div>
+        </article>
+
+        <!-- Foto 3 -->
+        <article class="card reveal" style="padding: 0; overflow: hidden;">
+          <div style="width: 100%; height: 250px; overflow: hidden; position: relative; background: var(--verde-100);">
+            <img src="images/foto3.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Evento institucional con familias">
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="badge badge--tierra">Comunidad</span>
+            <h3 class="card__title">Talleres con Padres</h3>
+            <p class="card__text">Espacios de soporte e integración activa donde las familias forman parte del aprendizaje de sus hijos.</p>
+          </div>
+        </article>
+
+        <!-- Foto 4 -->
+        <article class="card reveal" style="padding: 0; overflow: hidden;">
+          <div style="width: 100%; height: 250px; overflow: hidden; position: relative; background: var(--verde-100);">
+            <img src="images/foto4.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Celebración escolar">
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="badge">Institucional</span>
+            <h3 class="card__title">Fechas Jubilares</h3>
+            <p class="card__text">Celebrando nuestras costumbres, tradiciones y el talento artístico en nuestras ceremonias del calendario cívico.</p>
+          </div>
+        </article>
+
+        <!-- Foto 5 -->
+        <article class="card reveal" style="padding: 0; overflow: hidden;">
+          <div style="width: 100%; height: 250px; overflow: hidden; position: relative; background: var(--verde-100);">
+            <img src="images/foto5.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Área de recreación">
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="badge badge--tierra">Espacios</span>
+            <h3 class="card__title">Recreación Segura</h3>
+            <p class="card__text">Instalaciones de esparcimiento físico diseñadas para un descanso controlado, seguro y saludable.</p>
+          </div>
+        </article>
+
+        <!-- Foto 6 -->
+        <article class="card reveal" style="padding: 0; overflow: hidden;">
+          <div style="width: 100%; height: 250px; overflow: hidden; position: relative; background: var(--verde-100);">
+            <img src="images/foto6.jpeg" style="width: 100%; height: 100%; object-fit: cover;" alt="Feria escolar">
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+            <span class="badge">Proyectos</span>
+            <h3 class="card__title">Feria de Ciencias</h3>
+            <p class="card__text">Impulsamos la curiosidad científica, la hipótesis y la investigación autónoma desde la temprana edad.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Banner Informativo Inferior -->
+  <section class="section section--alt">
     <div class="container">
-        <h2 class="seccion-titulo titulo">Una escuela conectada con su familia</h2>
-        <p class="seccion-sub">Con el sistema, madres, padres y tutores siguen el día a día de sus hijos.</p>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">📅</div><h5 class="titulo">Asistencia al día</h5>
-                <p class="text-muted mb-0">Consulta asistencias, tardanzas y justifica inasistencias dentro del plazo de 5 días hábiles.</p></div></div>
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">⭐</div><h5 class="titulo">Logros por competencia</h5>
-                <p class="text-muted mb-0">Informe de progreso bimestral con la escala <strong>AD · A · B · C</strong> y conclusiones descriptivas.</p></div></div>
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">🛡️</div><h5 class="titulo">Recojo seguro</h5>
-                <p class="text-muted mb-0">Solo salen con sus padres o con las personas que tú autorizaste. Todo queda registrado.</p></div></div>
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">📣</div><h5 class="titulo">Comunicados</h5>
-                <p class="text-muted mb-0">Avisos de Dirección y de los docentes, directo en tu panel.</p></div></div>
+      <div class="banner reveal">
+        <div>
+          <h3>¿Deseas conocer nuestras instalaciones de cerca?</h3>
+          <p>Coordina una visita guiada directamente con el equipo administrativo de la institución.</p>
         </div>
+        <a href="mailto:mimundoinfantilsm@gmail.com" class="btn btn--primary">Contactar por Correo</a>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="seccion" id="contacto">
+  <!-- Footer Botánico Factual -->
+  <footer class="site-footer">
     <div class="container">
-        <div class="glass panel text-center" style="padding:3rem 1.5rem">
-            <h2 class="seccion-titulo titulo">Visítanos</h2>
-            <p class="mb-1">📍 Prolongación Ica N° 269, Huancayo</p>
-            <p class="mb-1">📞 989 079 891 &nbsp;·&nbsp; ✉️ mimundoinfantilsm@gmail.com</p>
-            <p class="text-muted mb-4">Turno mañana · Gestión privada · UGEL Huancayo</p>
-            <a href="" class="btn-pill relleno">Acceso familias y docentes ›</a>
+      <div class="footer__grid">
+        <div>
+          <h4>I.E.P. Mi Mundo Infantil</h4>
+          <p style="color: rgba(255,255,255,0.7);">Educación Básica Regular en los niveles de Inicial y Primaria con un enfoque integral y seguro.</p>
         </div>
+        <div>
+          <h4>Contacto</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+            📍 Prolongación Ica N° 269, Huancayo<br>
+            📞 989 079 891
+          </p>
+        </div>
+        <div>
+          <h4>Administración</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
+            Turno Mañana<br>
+            Gestión Privada · UGEL Huancayo
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar
+      </div>
     </div>
-</section>
+  </footer>
 
-<footer class="pie text-center">© 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar</footer>
-
-<!-- Script de Bootstrap necesario para componentes interactivos -->
-<script src="https://jsdelivr.net"></script>
 </body>
 </html>
