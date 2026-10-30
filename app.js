@@ -267,7 +267,7 @@
         btn.addEventListener("mouseenter", () => { btn.style.background = "#a07855"; btn.style.transform = "scale(1.05)"; });
         btn.addEventListener("mouseleave", () => { btn.style.background = "#c97a5a"; btn.style.transform = "scale(1)"; });
         window.addEventListener("scroll", () => {
-        if (window.scrollY > 250) {
+        if (window.scrollY > 400) {
         btn.style.display = "block";
         } else {
         btn.style.display = "none";
