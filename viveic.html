@@ -1,144 +1,145 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Galería de Fotos · Mi Mundo Infantil</title>
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            padding-top: 56px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería de Fotos · Mi Mundo Infantil</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- CSS propio -->
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Barra de navegación fija con los estilos de tu CSS (.nav-glass) -->
-  <nav class="nav-glass solida">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-      <a class="navbar-brand" href="#">
-        <div class="logo-burbuja">🏫</div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-mmi fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <span class="logo-burbuja">🏫</span>
         <span>Mi Mundo Infantil</span>
       </a>
-      <div style="display: flex; gap: 0.5rem;">
-        <a href="index.html" class="nav-link">Mi Mundo Infantil</a>
-        <a href="https://github.com/AngelQE/Mi-Mundo-Infantil" target="_blank" rel="noopener noreferrer" class="nav-link activo">📦 Repositorio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Mi Mundo Infantil</a></li>
+          <li class="nav-item"><a class="nav-link active" href="viveic.html">Galería</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/AngelQE/Mi-Mundo-Infantil" target="_blank" rel="noopener noreferrer">📦 Repositorio</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
-<!-- Encabezado de la Sección -->
-<header class="seccion text-center pb-2">
-    <div class="container pt-4">
-        <span class="hero-etiqueta">Nuestra Experiencia Escolar</span>
-        <h1 class="titulo display-5 mt-2">Galería de Momentos</h1>
-        <p class="lead col-md-8 mx-auto">Un vistazo a las actividades, proyectos y el día a día que define la vida en nuestra comunidad educativa.</p>
+  <!-- Encabezado -->
+  <header class="hero-section text-center">
+    <div class="container py-3">
+      <span class="eyebrow">Nuestra Experiencia Escolar</span>
+      <h1 class="display-5 fw-bold mt-2">Galería de Momentos</h1>
+      <p class="lead mx-auto" style="max-width: 62ch;">Un vistazo a las actividades, proyectos y el día a día que define la vida en nuestra comunidad educativa.</p>
     </div>
-</header>
+  </header>
 
-<!-- Contenedor del Álbum Fotográfico Estricto -->
-<div class="container my-5">
-  <!-- row-cols-lg-3 fuerza exactamente 3 columnas por fila en pantallas grandes -->
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
-    
-    <!-- Foto 1 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto1.jpeg" class="card-img-top" alt="Actividad 1">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Aprendizaje Lúdico</h4>
-          <p class="text-muted small mb-0">Nuestros niños de inicial explorando formas y colores a través del juego.</p>
+  <!-- Galería -->
+  <main class="container my-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Foto 1 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto1.jpeg" class="card-img-top gallery-img" alt="Actividad 1">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Aprendizaje Lúdico</h4>
+            <p class="text-muted small mb-0">Nuestros niños de inicial explorando formas y colores a través del juego.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 2 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto2.jpeg" class="card-img-top gallery-img" alt="Actividad 2">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Clases de Primaria</h4>
+            <p class="text-muted small mb-0">Desarrollo de competencias y trabajo en equipo en las aulas principales.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 3 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto3.jpeg" class="card-img-top gallery-img" alt="Actividad 3">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Talleres con Padres</h4>
+            <p class="text-muted small mb-0">Espacios de integración donde las familias participan activamente.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 4 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto4.jpeg" class="card-img-top gallery-img" alt="Actividad 4">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Fechas Jubilares</h4>
+            <p class="text-muted small mb-0">Celebrando nuestras tradiciones y el talento artístico escolar.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 5 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto5.jpeg" class="card-img-top gallery-img" alt="Actividad 5">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Receso y Recreación</h4>
+            <p class="text-muted small mb-0">Ambientes seguros diseñados para el sano esparcimiento físico.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 6 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto6.jpeg" class="card-img-top gallery-img" alt="Actividad 6">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Feria de Ciencias</h4>
+            <p class="text-muted small mb-0">Impulsando la curiosidad científica e investigación desde temprana edad.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 7 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto7.jpeg" class="card-img-top gallery-img" alt="Actividad 7">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Talleres de Arte</h4>
+            <p class="text-muted small mb-0">Exploración musical, pintura y desarrollo de la libre expresión creativa.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Foto 8 -->
+      <div class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+          <img src="images/foto8.jpeg" class="card-img-top gallery-img" alt="Actividad 8">
+          <div class="card-body p-4">
+            <h4 class="h5 fw-bold mb-2">Deporte Escolar</h4>
+            <p class="text-muted small mb-0">Psicomotricidad e integración mediante ejercicios y juegos colectivos.</p>
+          </div>
         </div>
       </div>
     </div>
+  </main>
 
-    <!-- Foto 2 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto2.jpeg" class="card-img-top" alt="Actividad 2">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Clases de Primaria</h4>
-          <p class="text-muted small mb-0">Desarrollo de competencias y trabajo en equipo en las aulas principales.</p>
-        </div>
-      </div>
+  <!-- Footer -->
+  <footer class="site-footer py-4 mt-5">
+    <div class="container text-center small">
+      © 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar
     </div>
+  </footer>
 
-    <!-- Foto 3 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto3.jpeg" class="card-img-top" alt="Actividad 3">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Talleres con Padres</h4>
-          <p class="text-muted small mb-0">Espacios de integración donde las familias participan activamente.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Foto 4 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto4.jpeg" class="card-img-top" alt="Actividad 4">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Fechas Jubilares</h4>
-          <p class="text-muted small mb-0">Celebrando nuestras tradiciones y el talento artístico escolar.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Foto 5 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto5.jpeg" class="card-img-top" alt="Actividad 5">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Receso y Recreación</h4>
-          <p class="text-muted small mb-0">Ambientes seguros diseñados para el sano esparcimiento físico.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Foto 6 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto6.jpeg" class="card-img-top" alt="Actividad 6">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Feria de Ciencias</h4>
-          <p class="text-muted small mb-0">Impulsando la curiosidad científica e investigación desde temprana edad.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Foto 7 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto7.jpeg" class="card-img-top" alt="Actividad 7">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Talleres de Arte</h4>
-          <p class="text-muted small mb-0">Exploración musical, pintura y desarrollo de la libre expresión creativa.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Foto 8 -->
-    <div class="col">
-      <div class="card glass h-100 border-0" style="border-radius: var(--radio); overflow: hidden;">
-        <img src="images/foto8.jpeg" class="card-img-top" alt="Actividad 8">
-        <div class="card-body p-4">
-          <h4 class="titulo mb-2 fs-5 fw-bold">Deporte Escolar</h4>
-          <p class="text-muted small mb-0">Psicomotricidad e integración mediante ejercicios y juegos colectivos.</p>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<footer class="pie text-center">© 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar</footer>
-
-<!-- Enlace CDN corregido completo de Bootstrap 5 JS -->
-<script src="https://jsdelivr.net"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
