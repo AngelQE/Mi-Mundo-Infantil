@@ -1,138 +1,159 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bienvenidos · Mi Mundo Infantil</title>
+    <!-- Cargamos las nuevas familias tipográficas Fraunces e Inter requeridas por tu CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Ajuste para que la barra fija no tape el inicio del contenido */
-        body {
-            padding-top: 56px;
-        }
-    </style>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Barra de navegación superior fija -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary-subtle">
-    <div class="container">
-        <a class="navbar-brand titulo fs-5" href="#">Mi Mundo Infantil</a>
-        <div class="ms-auto">
-            <a href="https://github.com/AngelQE/Mi-Mundo-Infantil" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm fw-medium rounded-pill px-3">
-                📦 Repositorio
-            </a>
-        </div>
+  <!-- Barra de navegación fija con los estilos de tu CSS (.nav-glass) -->
+  <nav class="nav-glass solida">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a class="navbar-brand" href="#">
+        <div class="logo-burbuja">🏫</div>
+        <span>Mi Mundo Infantil</span>
+      </a>
+      <div style="display: flex; gap: 0.5rem;">
+        <a href="viveic.html" class="nav-link">Galería</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="nav-link activo">📦 Repositorio</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
-<header class="hero">
-    <span class="orbe o1"></span><span class="orbe o2"></span><span class="orbe o3"></span>
-    <span class="estrella" style="top:18%;left:22%;animation-delay:.2s">✦</span>
-    <span class="estrella" style="top:30%;right:18%;animation-delay:1.4s">✧</span>
-    <span class="estrella" style="top:68%;left:12%;animation-delay:2.2s">✦</span>
-    <span class="estrella" style="top:75%;right:26%;animation-delay:.9s">✧</span>
-    <span class="estrella" style="top:12%;right:42%;animation-delay:3s">✦</span>
-
-    <div class="hero-contenido">
-        <span class="hero-etiqueta">Institución Educativa Particular · Huancayo</span>
-        <h1 class="titulo">Mi Mundo<br>Infantil</h1>
-        <p class="lead">Educamos integralmente a niñas y niños de <strong>Inicial</strong> y <strong>Primaria</strong>,
-            desarrollando su potencial académico, personal y social — con las familias siempre cerca.</p>
-        <div class="hero-botones">
-            <!-- Reemplazado por enlaces HTML convencionales -->
-            <a href="login.html" class="btn-pill relleno">Iniciar sesión ›</a>
-            <a href="#niveles" class="btn-pill">Conoce nuestros niveles</a>
-        </div>
-    </div>
-    <span class="scroll-hint">Desliza ↓</span>
-</header>
-
-<section class="seccion" id="niveles">
+  <!-- Héroe Principal adaptado a la estructura estructurada por tu Grid CSS -->
+  <header class="hero" style="padding-top: 8rem;">
     <div class="container">
-        <h2 class="seccion-titulo titulo">Nuestros niveles</h2>
-        <p class="seccion-sub">Dos niveles de Educación Básica Regular, con horarios y aulas pensados para cada edad.</p>
-        <div class="row g-4">
-            <div class="col-lg-6">
-                <div class="glass nivel-card inicial">
-                    <span class="fecha-chip">3 – 5 años</span>
-                    <h3 class="titulo mt-2">Nivel Inicial</h3>
-                    <p class="text-muted">Ciclo II · Aprendizaje a través del juego, la exploración y la expresión.
-                        Evaluación observacional y descriptiva.</p>
-                    
-                    <!-- Ejemplo estático de los bucles eliminados -->
-                    <div class="horario-fila">
-                        <span>Aula Semillitas (3 años)</span>
-                        <span>08:30 – 12:30</span>
-                    </div>
-                    <div class="horario-fila">
-                        <span>Aula Exploradores (4 años)</span>
-                        <span>08:30 – 13:00</span>
-                    </div>
-                </div>
+      <div class="hero__grid">
+        <div class="reveal">
+          <span class="eyebrow" style="color: var(--verde-300);">Institución Educativa Particular · Huancayo</span>
+          <h1>Mi Mundo Infantil</h1>
+          <p class="lead">Educamos integralmente a niñas y niños de <strong>Inicial</strong> y <strong>Primaria</strong>, desarrollando su potencial académico, personal y social — con las familias siempre cerca.</p>
+          <div class="hero__cta">
+            <a href="login.html" class="btn btn--primary">Iniciar sesión ›</a>
+            <a href="#niveles" class="btn btn--ghost">Conoce nuestros niveles</a>
+          </div>
+        </div>
+        <!-- Contenedor multimedia del héroe adaptado -->
+        <div class="hero__media reveal" style="animation-delay: 0.2s;">
+          <img src="images/foto2.jpeg" alt="Fachada o estudiantes de Mi Mundo Infantil">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección de Niveles Educativos organizada con tu grilla responsiva (.cards) -->
+  <section class="section" id="niveles">
+    <div class="container text-center">
+      <div class="reveal" style="text-align: center; margin-bottom: 3rem;">
+        <span class="eyebrow">Educación Básica Regular</span>
+        <h2>Nuestros Niveles</h2>
+        <p class="lead" style="margin-inline: auto;">Dos etapas formativas con horarios y aulas totalmente adaptados para cada rango de edad.</p>
+      </div>
+
+      <div class="cards" style="text-align: left;">
+        <!-- Tarjeta Nivel Inicial -->
+        <article class="card reveal">
+          <div class="card__icon">🎈</div>
+          <span class="badge">3 a 5 años</span>
+          <h3 class="card__title">Nivel Inicial</h3>
+          <p class="card__text">Ciclo II · Aprendizaje basado en el juego, la exploración y la libre expresión. Evaluación completamente observacional y descriptiva.</p>
+          <div class="specs" style="grid-template-columns: 1fr; gap: 0.5rem; margin-top: auto;">
+            <div class="spec">
+              <span class="spec__label">Aula Semillitas</span>
+              <span class="spec__value">08:30 – 12:30</span>
             </div>
-            <div class="col-lg-6">
-                <div class="glass nivel-card primaria">
-                    <span class="fecha-chip">6 – 11 años</span>
-                    <h3 class="titulo mt-2">Nivel Primaria</h3>
-                    <p class="text-muted">Ciclos III, IV y V · De 1° a 6° grado. Desarrollo progresivo de competencias
-                        en 8 áreas curriculares.</p>
-                    
-                    <!-- Ejemplo estático de los bucles eliminados -->
-                    <div class="horario-fila">
-                        <span>1° a 3° Grado</span>
-                        <span>08:00 – 13:45</span>
-                    </div>
-                    <div class="horario-fila">
-                        <span>4° a 6° Grado</span>
-                        <span>08:00 – 14:15</span>
-                    </div>
-                </div>
+            <div class="spec">
+              <span class="spec__label">Exploradores</span>
+              <span class="spec__value">08:30 – 13:00</span>
             </div>
-        </div>
-    </div>
-</section>
+          </div>
+        </article>
 
-<section class="seccion" id="sistema">
+        <!-- Tarjeta Nivel Primaria -->
+        <article class="card reveal" style="animation-delay: 0.1s;">
+          <div class="card__icon">📚</div>
+          <span class="badge">6 a 11 años</span>
+          <h3 class="card__title">Nivel Primaria</h3>
+          <p class="card__text">Ciclos III, IV y V · De 1° a 6° grado. Desarrollo progresivo y articulado de competencias clave en 8 áreas curriculares principales.</p>
+          <div class="specs" style="grid-template-columns: 1fr; gap: 0.5rem; margin-top: auto;">
+            <div class="spec">
+              <span class="spec__label">1° a 3° Grado</span>
+              <span class="spec__value">08:00 – 13:45</span>
+            </div>
+            <div class="spec">
+              <span class="spec__label">4° a 6° Grado</span>
+              <span class="spec__value">08:00 – 14:15</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Características del Sistema (.cards de 3 a 4 columnas) -->
+  <section class="section section--alt" id="sistema">
     <div class="container">
-        <h2 class="seccion-titulo titulo">Una escuela conectada con su familia</h2>
-        <p class="seccion-sub">Con el sistema, madres, padres y tutores siguen el día a día de sus hijos.</p>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">📅</div><h5 class="titulo">Asistencia al día</h5>
-                <p class="text-muted mb-0">Consulta asistencias, tardanzas y justifica inasistencias dentro del plazo de 5 días hábiles.</p></div></div>
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">⭐</div><h5 class="titulo">Logros por competencia</h5>
-                <p class="text-muted mb-0">Informe de progreso bimestral con la escala <strong>AD · A · B · C</strong> y conclusiones descriptivas.</p></div></div>
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">🛡️</div><h5 class="titulo">Recojo seguro</h5>
-                <p class="text-muted mb-0">Solo salen con sus padres o con las personas que tú autorizaste. Todo queda registrado.</p></div></div>
-            <div class="col-md-6 col-lg-3"><div class="glass feature">
-                <div class="icono">📣</div><h5 class="titulo">Comunicados</h5>
-                <p class="text-muted mb-0">Avisos de Dirección y de los docentes, directo en tu panel.</p></div></div>
-        </div>
-    </div>
-</section>
+      <div class="reveal" style="text-align: center; margin-bottom: 3rem;">
+        <span class="eyebrow">Innovación y Seguridad</span>
+        <h2>Una escuela conectada con su familia</h2>
+        <p class="lead" style="margin-inline: auto;">A través de nuestra plataforma de control, los padres y tutores pueden realizar un seguimiento en tiempo real.</p>
+      </div>
 
-<section class="seccion" id="contacto">
+      <div class="cards">
+        <!-- Feature 1 -->
+        <div class="card reveal">
+          <div class="card__icon">📅</div>
+          <h3 class="card__title">Asistencia al día</h3>
+          <p class="card__text">Consulta asistencias, tardanzas diarias y genera justificaciones válidas dentro de los 5 días hábiles.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="card reveal" style="animation-delay: 0.1s;">
+          <div class="card__icon">⭐</div>
+          <h3 class="card__title">Logros por Competencia</h3>
+          <p class="card__text">Visualiza las calificaciones bimestrales en la escala oficial <strong>AD · A · B · C</strong> con sus conclusiones descriptivas.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="card reveal" style="animation-delay: 0.2s;">
+          <div class="card__icon">🛡️</div>
+          <h3 class="card__title">Recojo Seguro</h3>
+          <p class="card__text">Control estricto en puerta. Los alumnos solo se retiran con apoderados o terceros validados en el sistema.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Visita / Datos de la UGEL -->
+  <section class="section" id="contacto">
     <div class="container">
-        <div class="glass panel text-center" style="padding:3rem 1.5rem">
-            <h2 class="seccion-titulo titulo">Visítanos</h2>
-            <p class="mb-1">📍 Prolongación Ica N° 269, Huancayo</p>
-            <p class="mb-1">📞 989 079 891 &nbsp;·&nbsp; ✉️ mimundoinfantilsm@gmail.com</p>
-            <p class="text-muted mb-4">Turno mañana · Gestión privada · UGEL Huancayo</p>
-            <a href="login.html" class="btn-pill relleno">Acceso familias y docentes ›</a>
+      <div class="banner reveal">
+        <div>
+          <span class="eyebrow" style="color: var(--verde-100);">Ubícanos en Huancayo</span>
+          <h2 style="color: #fff; margin-bottom: 0.5rem;">Visita nuestra Institución</h2>
+          <p style="margin-bottom: 0.25rem;">📍 Prolongación Ica N° 269, Huancayo</p>
+          <p style="margin-bottom: 0.25rem;">📞 989 079 891 &nbsp;·&nbsp; ✉️ mimundoinfantilsm@gmail.com</p>
+          <p class="badge badge--tierra" style="margin-top: 0.5rem;">Turno Mañana · Gestión Privada · UGEL Huancayo</p>
         </div>
+        <div style="margin-top: 1rem;">
+          <a href="login.html" class="btn btn--primary">Acceso Plataforma ›</a>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<footer class="pie text-center">© 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar</footer>
+  <!-- Footer Botánico Estricto -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__bottom" style="margin-top: 0; padding-top: 0; border-top: none;">
+        © 2026 I.E.P. Mi Mundo Infantil · Sistema de control de asistencias y seguridad escolar
+      </div>
+    </div>
+  </footer>
 
-<!-- Script de Bootstrap necesario para componentes interactivos -->
-<script src="https://jsdelivr.net"></script>
 </body>
 </html>
