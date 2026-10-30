@@ -276,9 +276,7 @@
         btn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
         });
-        DOM.body.appendChild(btn);
+        document.body.appendChild(btn);
         };
-        // Lanzar el inicializador del documento
-        DOM.body ? init() : document.addEventListener("DOMContentLoaded", init);
+        document.body ? injectScrollToTopButton() : document.addEventListener("DOMContentLoaded", injectScrollToTopButton);
         })();
-        
